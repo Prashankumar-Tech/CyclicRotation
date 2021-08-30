@@ -9,9 +9,8 @@ namespace CyclicRotation
     class Program
     {
         static void Main(string[] args)
-        {
-            int[] A = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            Console.WriteLine($"[{String.Join(", ", A)}] -> [{String.Join(", ", Solution(A, 11))}]");
+        {            
+            Console.WriteLine($"[{String.Join(", ", A)}] -> [{String.Join(", ", Solution([3, 8, 9, 7, 6], 3))}]");
         }
 
         public static int[] Solution(int[] A, int K)
